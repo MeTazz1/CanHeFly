@@ -1,0 +1,24 @@
+//
+// Prefix header for all source files of the project
+//
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "Sparrow.h"
+#import "Media.h"
+
+#define GAME_WIDTH    [UIApplication sharedApplication].keyWindow.frame.size.width
+#define GAME_HEIGHT   [UIApplication sharedApplication].keyWindow.frame.size.height
+
+#define CENTER_X   (GAME_WIDTH  / 2.0f)
+#define CENTER_Y   (GAME_HEIGHT / 2.0f)
+
+#define SIDE_SIZE 20
+#define GRAVITY 18.0
+#define NB_BULLETS_BY_BONUS 5
+#define DISTANCE_BETWEEN_WORLDZ 150000
+
+#endif
